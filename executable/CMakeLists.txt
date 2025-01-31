@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.22)
 
 # Lets initialize the project for our actual executable
-project(EXECUTABLE_NAME
+project(simple-stack-implement
     VERSION ${PROJECT_VERSION}
-    DESCRIPTION "EXECUTABLE Project"
+    DESCRIPTION "simple-stack-implement Project"
 )
 message(STATUS "Project name: " ${PROJECT_NAME})
 

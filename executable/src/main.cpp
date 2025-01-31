@@ -1,4 +1,3 @@
-
 #include "main.hpp"
 
 // Make sure to change the namespace EXECUTABLE to something more specific
