@@ -1,26 +1,75 @@
 #include "main.hpp"
 
-// Make sure to change the namespace EXECUTABLE to something more specific
-namespace lush::EXECUTABLE {
+using namespace std;
 
-	// Any forward declerations?
+template <typename T>
+class MyStack
+{
 
-	bool print_args(int argc, char** argv) {
+private:
+	
 
-		std::cout << "args: ";
-		for (int idx = 0; idx < argc; idx++) {
-			std::cout << argv[idx] << " ";
-		}
-		std::cout << std::endl;
 
-		return true;
+public:
+	MyStack() {}
+
+	void push(int x)
+	{
+
 	}
 
-}  // namespace lush::EXECUTABLE
+	void pop()
+	{
 
-int main(int argc, char** argv) {
+	}
 
-	std::cout << "Hello World! Executable given " << argc << " arguments." << std::endl;
+	int top()
+	{
 
-	lush::EXECUTABLE::print_args(argc, argv);
+	}
+
+	bool isEmpty()
+	{
+
+	}
+
+	int size()
+	{
+
+	}
+};
+
+int main()
+{
+	MyStack stack;
+	string line;
+	while (getline(cin, line))
+	{
+		stringstream ss(line);
+		string cmd;
+		ss >> cmd;
+		if (cmd == "push")
+		{
+			int x;
+			ss >> x;
+			// push method
+		}
+		else if (cmd == "pop")
+		{
+			// pop method
+		}
+		else if (cmd == "top")
+		{
+			// return the top
+		}
+		else if (cmd == "isEmpty")
+		{
+			// return boolean based on if its empty or not
+		}
+		else if (cmd == "size")
+		{
+			// return the size of the stack
+		}
+	}
+	return 0;
 }

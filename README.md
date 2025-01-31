@@ -71,45 +71,36 @@ top
 
 ---
 
-**Example Solution Code:**  
+**Code Skeleton:**  
 ```cpp
-#include <iostream>
-#include <string>
-#include <sstream>
+#include "main.hpp"
 
 using namespace std;
 
 class MyStack {
 private:
-    static const int MAX_CAPACITY = 1000;
-    int arr[MAX_CAPACITY];
-    int topIndex;
 
 public:
-    MyStack() : topIndex(-1) {}
+    MyStack(){}
 
     void push(int x) {
-        if (topIndex < MAX_CAPACITY - 1) {
-            arr[++topIndex] = x;
-        }
+
     }
 
     void pop() {
-        if (!isEmpty()) {
-            topIndex--;
-        }
+
     }
 
     int top() {
-        return isEmpty() ? -1 : arr[topIndex];
+
     }
 
     bool isEmpty() {
-        return topIndex == -1;
+
     }
 
     int size() {
-        return topIndex + 1;
+
     }
 };
 
@@ -123,15 +114,15 @@ int main() {
         if (cmd == "push") {
             int x;
             ss >> x;
-            stack.push(x);
+			// push method
         } else if (cmd == "pop") {
-            stack.pop();
+            // pop method
         } else if (cmd == "top") {
-            cout << stack.top() << endl;
+            // return the top
         } else if (cmd == "isEmpty") {
-            cout << (stack.isEmpty() ? "true" : "false") << endl;
+            // return boolean based on if its empty or not
         } else if (cmd == "size") {
-            cout << stack.size() << endl;
+            // return the size of the stack
         }
     }
     return 0;
